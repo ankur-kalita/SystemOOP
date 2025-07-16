@@ -1,4 +1,3 @@
-package strategy_pattern;
 public class MallardDuck extends Duck {
     public MallardDuck() {
         quackBehaviour = new Quack();

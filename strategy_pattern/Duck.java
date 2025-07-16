@@ -1,4 +1,3 @@
-package strategy_pattern;
 public abstract class Duck {
     FlyBehavior flyBehaviour;
     QuackBehavior quackBehaviour;
