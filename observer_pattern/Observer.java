@@ -1,5 +1,9 @@
 package observer_pattern;
 
 public interface Observer {
-    public void update(float temp, float humidity, float pressure);
+    // pull method
+    // public void update(float temp, float humidity, float pressure);
+
+    // push method
+    public void update();
 }
