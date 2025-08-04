@@ -12,7 +12,7 @@ public class HomeTheaterTestDrive {
         PopcornPopper popper = new PopcornPopper("Popcorn Popper");
 
         HomeTheaterFacade homeTheater = new HomeTheaterFacade(amp, tuner, player, projector, lights, screen, popper);
-        homeTheater.watchMovie("Interstellar :)");
+        homeTheater.watchMovie("Interstellar 🌌 ");
         homeTheater.endMovie();
     }
 }
