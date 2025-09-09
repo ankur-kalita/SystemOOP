@@ -9,11 +9,12 @@ public abstract class CaffeineBeverageWithHook {
             addCondiments();
         }
     }
-
+    // primitive operations to be implemented by subclasses
     abstract void brew();
 
     abstract void addCondiments();
 
+    // concrete operations
     void boilWater() {
         System.out.println("Boiling water");
     }
