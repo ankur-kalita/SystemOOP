@@ -1,0 +1,40 @@
+package proxy_pattern.gumball_machine_proxy.server;
+
+public class SoldOutState implements State {
+    GumballMachine gumballMachine;
+
+    public SoldOutState(GumballMachine gumballMachine) {
+        this.gumballMachine = gumballMachine;
+    }
+
+    @Override
+    public void insertQuarter() {
+        System.out.println("You can't insert a quarter, the machine is sold out");
+    }
+
+    @Override
+    public void ejectQuarter() {
+        System.out.println("You can't eject, you haven't inserted a quarter yet");
+    }
+
+    @Override
+    public void turnCrank() {
+        System.out.println("You turned, but there are no gumballs");
+    }
+
+    @Override
+    public void dispense() {
+        System.out.println("No gumball dispensed");
+    }
+
+    @Override
+    public void refill() {
+        System.out.println("Refilling the gumball machine");
+        gumballMachine.setState(gumballMachine.getNoQuarterState());
+    }
+
+    public String toString() {
+        return "sold out";
+    }
+    
+}
