@@ -15,5 +15,4 @@ public class TeaWithHook extends CaffeineBeverageWithHook {
     boolean customerWantsCondiments() {
         return false; // Tea drinkers might prefer no condiments by default
     }
-    
 }
