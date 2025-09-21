@@ -1,4 +1,4 @@
-package iterator_and_composite_patterns.iterator;
+package iterator_and_composite_patterns.iterator.standard;
 
 public class MenuTestDrive {
     public static void main(String[] args) {

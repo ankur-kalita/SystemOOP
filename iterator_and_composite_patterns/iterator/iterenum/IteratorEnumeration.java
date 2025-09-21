@@ -1,4 +1,4 @@
-package iterenum_pattern;
+package iterator_and_composite_patterns.iterator.iterenum;
 
 import java.util.*;
 
