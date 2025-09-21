@@ -20,7 +20,7 @@ public class BeatModel implements BeatModelInterface, Runnable {
 			clip = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
 			clip.open(AudioSystem.getAudioInputStream(resource));
 		}
-		catch(Exception ex) {
+		catch(Exception ex) { 
 			System.out.println("Error: Can't load clip");
 			System.out.println(ex);
 		}
